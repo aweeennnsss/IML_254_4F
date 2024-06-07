@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="resource/css/style.css"
+type="text/css">
+
+<title>Individu Assignment:About me</title>
+</head>
+<body>
+
+<style>
+table, th, td {
+border:3px solid black;
+}
+nav {
+background-image: url('https://i.pinimg.com/736x/90/32/17/9032173c48b3320398a566c1a3ddbf9a.jpg');
+background-size: cover;
+background-position: center;
+padding: 40px;
+}
+nav a {
+color: #f542aa;
+text-decoration: none;
+font-weight: bold;
+}
+nav a:hover {
+color: #A020F0; 
+}
+
+</style>
+
+<center>
+<header>
+<nav>
+<table cellspacing="10"
+cellpadding="5">
+
+<td><a href ="index.html">Home
+</a></td>
+<td><a href ="family.html">Family
+</a></td>
+<td><a href ="friends.html">Friends
+</a></td>
+<td><a href ="education.html">Education
+</a></td>
+<td><a href ="manhwa.html">Manhwa
+</a></td>
+<td><a href ="youtuber.html">Favorite Youtuber
+</a></td>
+</table>
+</nav>
+</header>
+</center>
+
+<div class="title">Me, Myself and I 🎀</div>
+<center>
+<marquee behavior="alternate"; scrollamount="25"; >
+<h1 style=" border:3px solid white; color: #e86882;display: inline-block;"> Hi Guys <8, Let's get to know me !!</h1>
+</marquee>
+<br></br>
+<br></br>
+
+<audio controls autoplay>
+<source src="resource/audio/song1.mp3"type="audio/mp3">
+</audio>
+
+<hr style="width:50%">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+<div class="numbertext">1 / 4</div>
+<img src="resource/image/me.jpg" class="bordered-image" style="width:30%">
+<div class="text">>-<</div>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">2 / 4</div>
+<img src="resource/image/me2.jpg" class="bordered-image" style="width:30%">
+<div class="text">^0^</div>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">3 / 4</div>
+<img src="resource/image/me3.jpg" class="bordered-image" style="width:30%">
+<div class="text">U_U</div>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">4 / 4</div>
+<img src="resource/image/me4.jpg" class="bordered-image" style="width:30%">
+<div class="text">:P</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span> 
+<span class="dot" onclick="currentSlide(2)"></span> 
+<span class="dot" onclick="currentSlide(3)"></span> 
+<span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+let i;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}    
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";  
+}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";  
+dots[slideIndex-1].className += " active";
+}
+</script>
+
+<hr style="width:50%">
+
+<br></br>
+<p style="background-color:white; color:#e86882;font-size:25px; font-family:Garamond;display: inline-block;"> 🐝Be Like A  Flower, Survive The Rain But Use It To Grow🌻</p>
+</center>
+<br></br>
+<center>
+<h2 style=font-size:30px;font-family:'Algerian';"><font color=#A020F0"> About Me;</h2>
+
+<table style="width:80%">
+<tr>
+<td><center><b>Name:</b></td></center>
+<td><center>Zahiratul Syazwina Binti Zaidi [Call me Aween Guys! xixixi]</center></td>
+<td><center><img src="https://i.pinimg.com/736x/a0/67/fe/a067fe40ed2b92a274fdd1afcec917a2.jpg"style="width:150px;height:150px;"></center></td>
+</tr>
+
+<tr>
+<td><center><b>Age:</b></center></td>
+<td><center>20</center></td>
+<td><center> <img src="https://i.pinimg.com/564x/39/35/d5/3935d5683a2330a8642883dcb318fd3e.jpg"style="width:150px;height:150px;"></center></td>
+</tr>
+
+<tr>
+<td><center><b>Birth of date:</b></center></td>
+<td><center>31<sup>st</sup> January 2004</center></td>
+<td><center> <img src="https://i.pinimg.com/564x/42/a9/6d/42a96d82f037ff58bf284c2df009cfe7.jpg" style="width:150px;height:150px;"></center></td>
+</tr>
+
+<tr>
+<td><center><b>Personal fact:</b></center></td>
+<td><center>My love language is buying someone a gift 🤍</center></td>
+<td><center><img src="https://i.pinimg.com/564x/58/5d/e4/585de48dd16c626fde973f30a5fad618.jpg" style="width:150px;height:150px;"></center></td>
+</tr>
+
+<tr>
+<td><center><b>E-mail:</b></center></td>
+<td><center>2022660998@student.uitm.edu.my</center></td>
+<td><center><img src="https://i.pinimg.com/564x/16/e9/6d/16e96d840bd6227cadf9e6f21739586a.jpg" style="width:150px;height:150px;"></center></td>
+</tr>
+
+<tr>
+<td><center><b>Hometown:</b></center></td>
+<td><center>Banting, Selangor</center></td>
+<td><center><img src="https://i.pinimg.com/564x/ca/60/48/ca6048cc5157939b2cec6bb9c16e8e40.jpg" style="width:150px;height:150px;"></center></td>
+</tr>
+
+<tr>
+<td><center><b>Favorite color:</b></center></td>
+<td><center>Pink💖,purple💜 & black🖤</center></td>
+<td><center><img src="https://i.pinimg.com/564x/55/30/7b/55307bee3c80f0abc6988cfa34627ec0.jpg" style="width:150px;height:150px;"></center></td>
+</tr>
+
+<tr>
+<td><center><b>Favorite food:</b></center></td>
+<td><center>Dumpling🥟</center></td>
+<td><center><img src="https://i.pinimg.com/564x/48/c7/5a/48c75a29795b37fad2d920059f958a84.jpg" style="width:150px;height:150px;"></center></td>
+</tr>
+
+<tr>
+<td><center><b>Hobby:</b></center></td>
+<td><center>My hobby is reading Manhwa</center></td>
+<td><center><img src="https://i.pinimg.com/564x/29/ae/98/29ae98b4e0fd56276e61045662b75d55.jpg" style="width:150px;height:150px;"></center></td>
+</tr>
+
+</table>
+
+<br></br>
+<center>
+<h2 style=font-size:30px;font-family:'Algerian';"><font color=#A020F0"> My 2024's food hunting ;</h2>
+<video controls loop width="30%" autoplay muted loop>
+<source src="resource/video/food.mp4" type="video/mp4">
+</video>
+</center>
+
+<br></br>
+
+<center>
+<footer>
+<nav>
+<a href="https://www.instagram.com/aweeennnsss">
+<img border="0" alt="My instagram" src="https://i.pinimg.com/564x/25/85/39/25853989e898a92ae7e075cae989d850.jpg" width="3%">
+<p style="color:black;font-size:15px;">My Instagram🥰</p>
+</a>
+<center>
+
+<p style="color:black;">&copy; 2024 Aweeennnsss. All rights reserved.</p>
+</nav>
+</center>
+</footer>
+
+<script language=JavaScript>
+<!--
+
+//edit by unwanted
+
+
+var message="WELCOME TO MY PAGE";
+
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("alert(message);return false")
+
+// -->
+</script>
+   
+
+</body>
+</html>

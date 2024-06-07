@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="resource/css/style.css"
+type="text/css">
+
+<title>Individu Assignment:Education</title>
+</head>
+<body>
+
+<style>
+table, th, td {
+border:3px solid white;
+}
+
+nav {
+background-image: url('https://i.pinimg.com/564x/00/a6/a5/00a6a50354d20fa3b1e2586f9c01f7ba.jpg');
+background-size: cover;
+background-position: center;
+padding: 40px;
+}
+nav a {
+color: #f542aa;
+text-decoration: none;
+font-weight: bold;
+}
+nav a:hover {
+color: #A020F0; 
+}
+</style>
+
+<center>
+<header>
+<nav>
+<table cellspacing="10"
+cellpadding="10">
+<td><a href ="index.html">Home
+</a></td>
+<td><a href="aboutme.html">About me
+</a></td>
+<td><a href ="family.html">Family
+</a></td>
+<td><a href ="friends.html">Friends
+</a></td>
+<td><a href ="manhwa.html">Manhwa
+</a></td>
+<td><a href ="youtuber.html">Favorite Youtuber
+</a></td>
+</table>
+</nav>
+</header>
+</center>
+
+<div class="title">My education 🎀</div>
+<center>
+<marquee behavior="alternate"; scrollamount="25"; >
+<h1 style=" border:3px solid white; color: #e86882;display: inline-block;"> Hi Guys <8, Let's get to know my education !!</h1>
+</marquee>
+<br></br>
+<hr style="width:50%">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+<div class="numbertext">1 / 4</div>
+<img src="resource/image/me5.jpg" class="bordered-image" style="width:30%">
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">2 / 4</div>
+<img src="resource/image/me6.jpg" class="bordered-image" style="width:30%">
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">3 / 4</div>
+<img src="resource/image/me7.jpg" class="bordered-image" style="width:30%">
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">4 / 4</div>
+<img src="resource/image/me4.jpg" class="bordered-image" style="width:30%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span> 
+<span class="dot" onclick="currentSlide(2)"></span> 
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+let i;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}    
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";  
+}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";  
+dots[slideIndex-1].className += " active";
+}
+</script>
+
+<br></br>
+<center>
+<p style="background-color:white; color:#e86882;font-size:25px; font-family:Garamond;display: inline-block;">💟A good education is a foundation for a better future💟</p>
+</center>
+<br></br>
+
+<hr style="width:50%">
+
+<center>
+<img src="resource/image/me5.jpg" class="bordered-image" style="width:20%">
+</center>
+<h1 style="font-size: 20px;border:3px solid white; color: #e86882;display: inline-block;"> It all starts here. <br></br>The first education I receive is in kindergarten.<br></br> I graduated from Tadika Balqis Bestari.</h1>
+<hr style="width:80%">
+<br></br>
+
+<center>
+<img src="resource/image/me6.jpg" class="bordered-image" style="width:20%">
+</center>
+<h1 style="font-size: 20px;border:3px solid white; color: #e86882;display: inline-block;"> In primary school, <br></br> I graduated from Sri Langat Excellence Cluster National School.</h1>
+<hr style="width:80%">
+<br></br>
+
+<center>
+<img src="resource/image/me7.jpg" class="bordered-image" style="width:20%">
+</center>
+<h1 style="font-size: 20px;border:3px solid white; color: #e86882;display: inline-block;">My secondary school is at SMK Banting. <br></br>This is where I graduated and took SPM before my diploma era.</h1>
+<hr style="width:80%">
+<br></br>
+
+<center>
+<img src="resource/image/me4.jpg" class="bordered-image" style="width:20%">
+</center>
+<h1 style="font-size: 20px;border:3px solid white; color: #e86882;display: inline-block;">My current education is at Uitm Merbok.<br></br> I am in my fourth semester as a diploma student.</h1>
+<hr style="width:80%">
+<br></br>
+
+
+<center>
+<footer>
+<center>
+<nav>
+<p>&copy; 2024 Aweeennnsss. All rights reserved.</p>
+</nav>
+</center>
+</footer>
+
+<script language=JavaScript>
+<!--
+
+//edit by unwanted
+
+
+var message="WELCOME TO MY PAGE";
+
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("alert(message);return false")
+
+// -->
+</script>
+
+</body>
+</html>

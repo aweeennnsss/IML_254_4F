@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="resource/css/style.css"
+type="text/css">
+
+<title>Individu Assignment:Famiy</title>
+</head>
+<body>
+
+<style>
+table, th, td {
+border:3px solid white;
+}
+nav {
+background-image: url('https://i.pinimg.com/564x/45/68/a7/4568a7779f7d27af532bd463383c981d.jpg');
+background-size: cover;
+background-position: center;
+padding: 40px;
+}
+nav a {
+color: #A020F0;
+text-decoration: none;
+font-weight: bold;
+}
+nav a:hover {
+color: #f542aa; 
+}
+</style>
+
+<center>
+<header>
+<nav>
+<table cellspacing="10"
+cellpadding="10">
+<td><a href ="index.html">Home
+</a></td>
+<td><a href="aboutme.html">About me
+</a></td>
+<td><a href ="friends.html">Friends
+</a></td>
+<td><a href ="education.html">Education
+</a></td>
+<td><a href ="manhwa.html">Manhwa
+</a></td>
+<td><a href ="youtuber.html">Favorite Youtuber
+</a></td>
+</table>
+</nav>
+</header>
+</center>
+
+<div class="title">My Family 🎀</div>
+<center>
+<marquee behavior="alternate" scrollamount="25">
+<h1 style=" border:3px solid white; color: #e86882;display: inline-block;"> Hi Guys <8, Get to know my family !!</h1>
+</marquee>
+<br></br>
+<hr style="width:50%">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+<div class="numbertext">1 / 2</div>
+<img src="resource/image/family.jpg" class="bordered-image" style="width:50%">
+<div class="text">My</div>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">2 / 2</div>
+<img src="resource/image/family2.jpg" class="bordered-image" style="width:50%">
+<div class="text">Family</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span> 
+<span class="dot" onclick="currentSlide(2)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+let i;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}    
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";  
+}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";  
+dots[slideIndex-1].className += " active";
+}
+</script>
+
+<hr style="width:50%">
+
+<p style="background-color:white; color:#e86882;font-size:25px; font-family:Garamond;display: inline-block;"> When We Have Each Other, We Have Everything 💟</p>
+<body>
+</center>
+
+<br></br>
+<center>
+<h2 style=font-size:30px;font-family:'Algerian';"><font color=#A020F0">Family's name;</h2>
+
+<table style="width:50%">
+<tr>
+<td><center><b>My father:</b></td></center>
+<td><center>Zaidi bin Mat Desa (Ayah)</center></td>
+<td><center><img src="https://i.pinimg.com/564x/ac/2a/42/ac2a427f632fe48623d3e19f5ab25bff.jpg"style="width:150px;height:150px;"></center></td>
+</tr>
+
+<tr>
+<td><center><b>My mother:</b></td></center>
+<td><center>Zulaila binti Mohd Noor(Mama)</center></td>
+<td><center><img src="https://i.pinimg.com/564x/50/d9/47/50d94789611ee690770a5b8199aa6eb1.jpg"style="width:150px;height:150px;"></center></td>
+</tr>
+
+<tr>
+<td><center><b>My older brother(1st child):</b></td></center>
+<td><center>Zahirul Zafrie bin Zaidi(Abang pi)</center></td>
+<td><center><img src="https://i.pinimg.com/564x/54/09/df/5409df83790c4b2cd499d773d8851e7c.jpg"style="width:150px;height:150px;"></center></td>
+</tr>
+
+<tr>
+<td><center><b>My older sister(2nd child):</b></td></center>
+<td><center>Zahiratun Najwa Binti Zaidi(Kakak)</center></td>
+<td><center><img src="https://i.pinimg.com/564x/58/92/47/589247265a80a46f8b93587ce2ec5690.jpg"style="width:150px;height:150px;"></center></td>
+</tr>
+
+</table>
+
+<br></br>
+
+<center>
+<footer>
+<center>
+<nav>
+<p style="color:black;">&copy; 2024 Aweeennnsss. All rights reserved.</p>
+</nav>
+</center>
+</footer>
+
+<script language=JavaScript>
+<!--
+
+//edit by unwanted
+
+
+var message="WELCOME TO MY PAGE";
+
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("alert(message);return false")
+
+// -->
+</script>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="resource/css/style.css"
+type="text/css">
+
+<title>Individu Assignment:Index</title>
+</head>
+<body>
+
+<style>
+table, th, td {
+border:3px solid white;
+}
+nav {
+background-image: url('https://i.pinimg.com/564x/64/df/1a/64df1ad3e0a50771c771a1091957cac8.jpg');
+background-size: cover;
+background-position: center;
+padding: 40px;
+}
+nav a {
+color: #f542aa;
+text-decoration: none;
+font-weight: bold;
+}
+nav a:hover {
+color: #A020F0; 
+}
+</style>
+
+<center>
+<header>
+<nav>
+<table cellspacing="10"
+cellpadding="10">
+<td><a href="aboutme.html">About me
+</a></td>
+<td><a href ="family.html">Family
+</a></td>
+<td><a href ="friends.html">Friends
+</a></td>
+<td><a href ="education.html">Education
+</a></td>
+<td><a href ="manhwa.html">Manhwa
+</a></td>
+<td><a href ="youtuber.html">Favorite Youtuber
+</a></td>
+</table>
+</nav>
+</header>
+
+<div class="animation">
+<marquee behavior="scroll" direction="left" scrollamount="15">
+<h2 style=font-size:30px;font-family:'Algerian';"><font color=#A020F0"> Hi there! Come visit my page at any time.🥰</h2>
+</div>
+</marquee>
+</center>
+
+<center>
+<hr style="width:50%">
+<audio controls autoplay>
+<source src="resource/audio/song2.mp3"type="audio/mp3"></audio>
+<p style="font-size:30px;font-family:'Courier New';color:white;"><b>Enjoy while looking through my page!</b></p>
+
+<hr style="width:50%">
+</center>
+
+<marquee behavior="scroll" direction="up" scrollamount="5">
+<center>
+<h1 style="border:10px solid white; color: #e86882;display: inline-block;"> = Welcome != <br></br> ✨Let's discover my world and interests✨ <br></br></h1>
+</center>
+</marquee>
+
+<center>
+<footer>
+<center>
+<nav>
+<p>&copy; 2024 Aweeennnsss. All rights reserved.</p>
+</center>
+</footer>
+
+<script language=JavaScript>
+<!--
+
+//edit by unwanted
+
+
+var message="WELCOME TO MY PAGE";
+
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("alert(message);return false")
+
+// -->
+</script>
+
+</body>
+</html>
